@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="shortcut icon" href="../assets/Logo.png">
+    <script src="https://kit.fontawesome.com/9162922834.js" crossorigin="anonymous"></script>
+    <title>Come Pastel</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="brand"><a href="/"><img class="logo" src="../assets/Logo.png" alt="Come Pastel"></a></div>
+      <nav>
+        <ul>
+          <li><a href="../Maquetación Cliente/index.html">Inicio</a></li>
+          <li><a href="/products">Productos</a></li>
+          <li><a href="/about">Nosotros</a></li>
+          <li id="login"><a href="/login" >Ingresa</a></li>
+          <li id="signup"><a href="/signup">Registrate</a></li>
+        </ul>
+      </nav>
+      <div id="pastel-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="../Maquetación Cliente/index.html">Inicio</a></li>
+          <li><a href="/products">Productos</a></li>
+          <li><a href="/about">Nosotros</a></li>
+          <li id="login"><a href="/login" >Ingresa</a></li>
+          <li id="signup"><a href="/signup">Registrate</a></li>
+        </ul>
+      </div>
+    </header>
+<hr>
+    <main>
+        <section class="center">
+        <h4> Crea tu cupcake </h4>
+        <table style="margin: 0 auto;" border="2">
+            <caption>¿Qué sabor para tu pan?</caption>
+                <thead>
+                    <tr>
+                        <th>Sabor</th>
+                        <th>Precio ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Vainilla</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fresa</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Coco</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Queso</td>
+                        <td>15.00</td>
+                    </tr>
+                </tbody>
+        </table>
+        <select name="Sabor" id="sabor">
+          <option value="Chocolate"> Chocolate</option>
+          <option value="Vainilla"> Vainilla</option>
+          <option value="Fresa"> Fresa</option>
+          <option value="Coco"> Coco</option>
+          <option value="Queso"> Queso</option>
+        </select>
+      <h4>¿Necesitas combinar sabores?</h4>
+      <input class="combinacion" type="checkbox">
+         <div class="masSabor">
+          <p>¿Qué otro sabor le agregamos?</p>
+          <select name="Sabor" id="saborExtra">
+              <option value="Chocolate"> Chocolate</option>
+              <option value="Vainilla"> Vainilla</option>
+              <option value="Fresa"> Fresa</option>
+              <option value="Coco"> Coco</option>
+              <option value="Queso"> Queso</option>
+          </select>
+      </div>
+  </section>
+  <hr>
+  <section class="center">
+    <table style="margin: 0 auto;" border="2">
+        <caption>¿Qué adorno utilizaremos?</caption>
+            <thead>
+                <tr>
+                    <th>Adorno</th>
+                    <th>Precio extra ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fresas</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>Chispas de chocolate</td>
+                    <td>6.00</td>
+                </tr>
+                <tr>
+                    <td>Chispas de colores</td>
+                    <td>6.00</td>
+                </tr>
+                <tr>
+                    <td>M&M's</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>Fondan</td>
+                    <td>15.00</td>
+                </tr>
+            </tbody>
+    </table>
+      <select name="Extras" id="extras">
+          <option value="Fresas"> Fresas </option>
+          <option value="Chispitas"> Chispitas de colores </option>
+          <option value="ChispitasCh"> Chispitas de chocolate </option>
+          <option value="mnm"> M&M's </option>
+          <option value="Fondan"> Fondan </option>
+      </select>
+      <h4>¿Combinamos adonros?</h4>
+      <input class="combinacion" type="checkbox">
+         <div class="masSabor">
+          <p>¿Qué otro adonro le agregamos?</p>
+          <select name="Extras" id="extras">
+              <option value="Fresas"> Fresas </option>
+              <option value="Chispitas"> Chispitas de colores </option>
+              <option value="ChispitasCh"> Chispitas de chocolate </option>
+              <option value="mnm"> M&M's </option>
+              <option value="Fondan"> Fondan </option>
+          </select>
+      </div>       
+  </section>
+  <hr>
+  <form class="center">
+      <h4>Dejanos tus datos</h4>
+      <input type="text" name="name" placeholder="Nombre Completo:">
+      <input type="email" name="email" placeholder="Correo:">
+      <input type="text" name="number" placeholder="Número telefónico:">
+      <input type="text" name="menssage" placeholder="Describe tu pastel:">
+      <input type="submit">
+  </form>
+</main>
+<hr>
+<hr>
+    <footer>
+        <p class="center"><img class="logo" src="../assets/Logo.png" alt="">
+           Todos los derechos reservados Pastelería Come Pastel®.
+        </p>
+    </footer>
+<hr>
+    <script src="../styles/index.js"></script>
+  </body>
+</html>
